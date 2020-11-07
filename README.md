@@ -2,10 +2,10 @@
 RaspiOS with NGINX, Letsencrypt, Glance with Docker Portainer, Watch Tower, InfluxDB, Grafana, MotionEye, TasmoAdmin, MQTT, and  Home-Assistant 
 
 # Requirement:
-Rasberry Pi 4
-microSD
-[RaspiOS](https://downloads.raspberrypi.org/raspios_armhf_latest)
-[Raspbian Imager](https://www.raspberrypi.org/downloads/)
+- Rasberry Pi 4
+- microSD
+- [RaspiOS](https://downloads.raspberrypi.org/raspios_armhf_latest)
+- [Raspbian Imager](https://www.raspberrypi.org/downloads/)
 
 # Installation:
 step 1: Burn your microSD using Raspberry Pi Imager  
