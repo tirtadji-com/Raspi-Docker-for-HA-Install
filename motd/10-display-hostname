@@ -1,0 +1,13 @@
+#!/bin/bash
+###############################################################
+#	Created by Richard Tirtadji
+#
+#
+# MOTD for uBuntu 18.04
+# hostname-display
+###############################################################
+
+/usr/bin/figlet "$(hostname)" | /usr/games/lolcat -f
+
+
+
