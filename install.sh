@@ -4,23 +4,6 @@
 #   Main installer for Raspbian Buster
 # 	Basic script for server
 ###############################################################
-TZONE=$1
-PUB_KEY=$2
-HOST_NAME=$3
-
-while [[ $TZONE = "" ]]; do
-  read -p "Write your timezone eg, Asia/Jakarta: " TZONE
-done
-
-while [[ $PUB_KEY = "" ]]; do
-  read -p "Write your public key (long string of code starting with ssh-rsa), eg. ssh-rsa: " PUB_KEY
-done
-
-while [[ $HOST_NAME = "" ]]; do
-  read -p "The name of your server host: " HOST_NAME
-done
-
-
 apt-get update && apt-get dist-upgrade -y && apt autoremove -y
 apt-get -y install unzip
 
@@ -49,7 +32,7 @@ chmod +x /root/hass/*.sh
 chmod +x /root/docker/*.sh
 ./checking.sh
 rm /root/main.zip
-/root/main.sh $TZONE $PUB_KEY $HOST_NAME
+/root/main.sh
 rm /root/main.sh 
 /root/home-assistant.sh
 rm /root/home-assistant.sh

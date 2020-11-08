@@ -22,8 +22,17 @@ step 8: Now you will need to change directory to root by typin `~`
 Run this installer to complete the installations
 
 ```
-curl -sL https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/main/install.sh | bash
+wget https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/main/install.sh
+
+# Next you will need to chmod the files
+chmod +x install.sh
+
+# Execute the script
+./install.sh
+
 ```
+
+
 
 # More Docker-Apps
 If you want to install more docker then you will have to run each individual script inside docker directory accept for hass-install.sh  
