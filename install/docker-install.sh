@@ -19,5 +19,4 @@ sudo sh get-docker.sh
 # Making user
 usermod -aG docker $NEW_USER
 
-#echo -e "Docker and Docker-Compose Installed \e[32m[DONE]\033[0m"
 echo -e "Docker Installed \e[32m[DONE]\033[0m"

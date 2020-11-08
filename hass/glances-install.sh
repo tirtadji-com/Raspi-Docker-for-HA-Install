@@ -6,7 +6,7 @@
 # Install Glances for Raspbian Buster
 # Basic script for server
 ###############################################################
-apt install glances
+apt install glances -y
 
 # Stop glances for HASS preparation
 service glances stop

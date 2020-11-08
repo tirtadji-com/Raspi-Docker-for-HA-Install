@@ -22,8 +22,18 @@ step 8: Now you will need to change directory to root by typin `~`
 Run this installer to complete the installations
 
 ```
-wget https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/main/install.sh
+# Run this first and reboot your system
+apt-get update && apt-get dist-upgrade -y && apt autoremove -y
+reboot now
+```
 
+Then execute the rest of the script
+```
+wget https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/main/install.sh
+```
+
+Now you will need to chmod and execute the scripts from your ROOT Directory
+```
 # Next you will need to chmod the files
 chmod +x install.sh
 

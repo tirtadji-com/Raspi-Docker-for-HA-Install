@@ -34,7 +34,7 @@ fi
 /root/install/fail2ban-install.sh
 
 # Install Docker
-/root/install/docker-install.sh
+/root/install/docker-install.sh $NEW_USER
 
 # Install Samba
 /root/hass/glances-install.sh
