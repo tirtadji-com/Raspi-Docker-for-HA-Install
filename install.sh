@@ -22,7 +22,7 @@ fi
 cd ~
 
 wget https://github.com/tirtadji-com/Raspi-Docker-for-HA-Install/archive/main.zip
-unzip /root/master.zip -d /root/
+unzip /root/main.zip -d /root/
 result=`ls -F /root/ | grep /`
 mv /root/$result/* /root/
 rm -r /root/$result
@@ -31,7 +31,7 @@ chmod +x /root/install/*.sh
 chmod +x /root/hass/*.sh
 chmod +x /root/docker/*.sh
 ./checking.sh
-rm /root/master.zip
+rm /root/main.zip
 /root/main.sh
 rm /root/main.sh
 /root/home-assistant.sh
