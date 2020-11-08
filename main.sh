@@ -32,11 +32,13 @@ SSH_ROOT=~/.ssh
 [ ! -d "$SSH_ROOT" ] && mkdir -p "$SSH_ROOT"
 chmod 700 $SSH_ROOT 
 cat <<EOF >$SSH_ROOT/authorized_keys
-# Authorization created especially for KRDesigns.com
 $PUB_KEY
 EOF
 
 chmod 600 $SSH_ROOT/authorized_keys
+
+cp -r /root/.ssh /home/pi/
+chown -R pi: /home/pi/.ssh
 
 sed -i 's/#\?\(PermitRootLogin\s*\).*$/\1 yes/' /etc/ssh/sshd_config
 sed -i 's/#\?\(PermitEmptyPasswords\s*\).*$/\1 no/' /etc/ssh/sshd_config

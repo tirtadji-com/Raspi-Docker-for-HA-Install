@@ -14,25 +14,22 @@ step 2: Remove your microSD and reinsert to your PC/notebook
 step 3: Now go to your microSD directory `/boot` and be sure to type using terminal `touch ssh` (we are going to install HA headless)  
 step 4: Boot your microSD on Raspberry Pi and find the local IP  
 step 5: Now SSH to your RPI by using `ssh pi@local-ip` password `raspberry`  
-step 6: Once connected you need to `sudo passwd` and insert your root password (twice)  
-step 7: Then you need to change to ROOT by typing `su` and enter your root password  
-step 8: Now you will need to change directory to root by typin `~`  
-
-## Richard Raspbian Buster Installer Scripts
-Run this installer to complete the installations
-
+step 6: Update and Reboot once  
 ```
 # Run this first and reboot your system
-apt-get update && apt-get dist-upgrade -y && apt autoremove -y
-reboot now
+sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt autoremove -y && sudo reboot now
 ```
 
-Then execute the rest of the script
+step 7: Now SSH back to your RPI by using `ssh pi@local-ip` password `raspberry`
+step 8: Once connected you need to `sudo passwd` and insert your root password (twice)  
+step 9: Then you need to change to ROOT by typing `su` and enter your root password  
+step 10: Now you will need to change directory to root by typin `~`  
+step 11: Then execute the rest of the script  
 ```
 wget https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/main/install.sh
 ```
 
-Now you will need to chmod and execute the scripts from your ROOT Directory
+step 12: Now you will need to chmod and execute the scripts from your ROOT Directory
 ```
 # Next you will need to chmod the files
 chmod +x install.sh
@@ -42,10 +39,11 @@ chmod +x install.sh
 
 ```
 
-
+# First WARNING
+Remember after the installation and Reboot you will need your SSH key to login since your RPI is now enhanced and your password will not working anymore
 
 # More Docker-Apps
-If you want to install more docker then you will have to run each individual script inside docker directory accept for hass-install.sh  
+If you want to install more docker application for your Home-Assistant then you will have to run each individual script inside docker directory accept for hass-install.sh  
 To install simply by `cd /root/docker` and type `./[docker-apps]-install.sh`
 
 # Docker-Apps:
@@ -61,7 +59,7 @@ To install simply by `cd /root/docker` and type `./[docker-apps]-install.sh`
 - Glaces running on port 61208
 - Home-Assistant on port 8123
 
-# WARNING!
+# 2nd WARNING
 Before you run NGINX installation make sure you open your router port 80/443 and directed to your RPI-ip else you dont need to install NGINX
 
 In order to setup correctly you will need to run this command from your `/root/` directory as *ROOT*
