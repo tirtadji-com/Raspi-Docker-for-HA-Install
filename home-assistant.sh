@@ -25,9 +25,6 @@ if [ "$NGX" != "${NGX#[Yy]}" ]; then
 # Prepare NGINX Config for HASS
 /root/hass/nginx-hass-conf.sh
 
-# Install Fail2Ban
-/root/install/fail2ban-install.sh
-
 fi
 
 # Install Fail2Ban

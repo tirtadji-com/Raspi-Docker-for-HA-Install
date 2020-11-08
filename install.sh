@@ -35,4 +35,11 @@ rm /root/main.zip
 rm /root/main.sh 
 /root/home-assistant.sh
 rm /root/home-assistant.sh
-#reboot now
+rm /root/install/docker-install.sh
+rm /root/install/fail2ban-install.sh
+rm /root/install/user-install.sh
+rm /root/hass/glances-install.sh
+rm /root/hass/samba-install.sh
+rm /root/docker/hass-install.sh
+
+echo -e "HA installation complete"

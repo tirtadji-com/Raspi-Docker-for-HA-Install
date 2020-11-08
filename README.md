@@ -59,6 +59,9 @@ To install simply by `cd /root/docker` and type `./[docker-apps]-install.sh`
 - Glaces running on port 61208
 - Home-Assistant on port 8123
 
+# NGINX Installation
+IF you did not setup NGINX on your first installation and would like to add it up you can run `./nginx.sh' from your root directory. 
+
 # 2nd WARNING
 Before you run NGINX installation make sure you open your router port 80/443 and directed to your RPI-ip else you dont need to install NGINX
 
