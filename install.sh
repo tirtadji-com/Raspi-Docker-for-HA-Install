@@ -41,5 +41,6 @@ rm /root/install/user-install.sh
 rm /root/hass/glances-install.sh
 rm /root/hass/samba-install.sh
 rm /root/docker/hass-install.sh
+rm /root/get-docker.sh
 
 echo -e "HA installation complete"
