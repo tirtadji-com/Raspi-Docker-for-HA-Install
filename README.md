@@ -22,7 +22,7 @@ step 8: Now you will need to change directory to root by typin `~`
 Run this installer to complete the installations
 
 ```
-curl -sL https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/master/install.sh | bash
+curl -sL https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/main/install.sh | bash
 ```
 
 # More Docker-Apps

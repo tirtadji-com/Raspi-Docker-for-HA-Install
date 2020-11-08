@@ -14,9 +14,11 @@ if [ $(id -u) -ne 0 ]; then
 	exit 1
 fi
 
-# if [[ $LINUX -ne Ubuntu ]]; then
-# 	echo "This script usage only for UBuntu" >&2
-# 	exit 1
-# fi
+if [[ $LINUX -ne Raspbian ]]; then
+	echo "This script usage only for RaspiOS" >&2
+	exit 1
+fi
+
+cd ~
 
 echo "You are running as ROOT and `$LINUX` OS"
