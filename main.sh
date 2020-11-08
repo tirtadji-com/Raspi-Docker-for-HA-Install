@@ -17,7 +17,7 @@ while [[ $PUB_KEY = "" ]]; do
 done
 
 while [[ $HOST_NAME = "" ]]; do
-  read -p "The name of your server host: " HOST_NAME
+  read -p "The name of your server host eg. Home-Assistant: " HOST_NAME
 done
 
 # Setup time for my timezone
