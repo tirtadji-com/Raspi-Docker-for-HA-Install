@@ -6,6 +6,21 @@
 ###############################################################
 apt-get update && apt-get dist-upgrade -y && apt autoremove -y
 apt-get -y install unzip
+
+# Check Procedure
+LINUX='lsb_release -is'
+
+if [ $(id -u) -ne 0 ]; then
+	echo "Run this script as a Root user only" >&2
+	exit 1
+fi
+
+if [[ $LINUX -ne Raspbian ]]; then
+	echo "This script usage only for RaspiOS" >&2
+	exit 1
+fi
+cd ~
+
 wget https://github.com/tirtadji-com/Raspi-Docker-for-HA-Install/archive/main.zip
 unzip /root/master.zip -d /root/
 result=`ls -F /root/ | grep /`
