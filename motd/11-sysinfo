@@ -40,5 +40,5 @@ $W  Uptime......: $W`uptime -p`
 $W  Load........: $G$LOAD1$W (1m), $G$LOAD5$W (5m), $G$LOAD15$W (15m)
 $W  Processes...:$W $G$PROCESS_ROOT$W (root), $G$PROCESS_USER$W (user), $G$PROCESS_ALL$W (total)
 $W  CPU.........: $W$PROCESSOR_NAME ($G$PROCESSOR_COUNT$W vCPU), $G$PROCESS_TEMP$W (Temperature)
-$W  Memory......: $G$USED$W used, $G$FREE$W free, $G$TOTAL$W total$W"
+$W  Memory......: $G$USED$W used, $G$FREE$W free, $G$TOTAL$W total$W
 $W  Address for eth0.....: $G$PROCESS_IP_F$W (IPv4) $G$PROCESS_IP_S$W (IPv6)"

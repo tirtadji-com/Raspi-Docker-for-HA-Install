@@ -30,6 +30,9 @@ fi
 # Install Fail2Ban
 /root/install/fail2ban-install.sh
 
+# Install Fail2Ban
+/root/install/ufw-install.sh
+
 # Install Docker
 /root/install/docker-install.sh $NEW_USER
 
