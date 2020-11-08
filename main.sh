@@ -21,7 +21,7 @@ while [[ $HOST_NAME = "" ]]; do
 done
 
 # Setup time for my timezone
-timedatectl set-timezone '$TZONE'
+timedatectl set-timezone $TZONE
 
 # Ubuntu Update
 apt-get update && apt-get dist-upgrade -y && apt autoremove -y
