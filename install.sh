@@ -30,7 +30,6 @@ chmod +x /root/*.sh
 chmod +x /root/install/*.sh
 chmod +x /root/hass/*.sh
 chmod +x /root/docker/*.sh
-./checking.sh
 rm /root/main.zip
 /root/main.sh
 rm /root/main.sh 
