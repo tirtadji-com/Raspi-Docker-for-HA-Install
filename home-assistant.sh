@@ -28,11 +28,6 @@ if [ "$NGX" != "${NGX#[Yy]}" ]; then
 # Install Fail2Ban
 /root/install/fail2ban-install.sh
 
-else
-
-# Install Fail2Ban
-/root/install/fail2ban-install.sh
-
 fi
 
 # Install Fail2Ban
