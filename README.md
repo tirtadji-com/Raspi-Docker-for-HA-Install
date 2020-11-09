@@ -9,27 +9,27 @@ RaspiOS with NGINX, Letsencrypt, Glance with Docker Portainer, Watch Tower, Infl
 - Your public ssh keys (please google it on how to create one for you) 
 
 # Installation:
-step 1: Burn your microSD using Raspberry Pi Imager  
-step 2: Remove your microSD and reinsert to your PC/notebook  
-step 3: Now go to your microSD directory `/boot` and be sure to type using terminal `touch ssh` (we are going to install HA headless)  
-step 4: Boot your microSD on Raspberry Pi and find the local IP  
-step 5: Now SSH to your RPI by using `ssh pi@local-ip` password `raspberry`  
-step 6: Update and Reboot once  
+**step 1**: Burn your microSD using Raspberry Pi Imager  
+**step 2**: Remove your microSD and reinsert to your PC/notebook  
+**step 3**: Now go to your microSD directory `/boot` and be sure to type using terminal `touch ssh` (we are going to install HA headless)  
+**step 4**: Boot your microSD on Raspberry Pi and find the local IP  
+**step 5**: Now SSH to your RPI by using `ssh pi@local-ip` password `raspberry`  
+**step 6**: Update and Reboot once  
 ```
 # Run this first and reboot your system
 sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt autoremove -y && sudo reboot now
 ```
 
-step 7: Now SSH back to your RPI by using `ssh pi@local-ip` password `raspberry`
-step 8: Once connected you need to `sudo passwd` and insert your root password (twice)  
-step 9: Then you need to change to ROOT by typing `su` and enter your root password  
-step 10: Now you will need to change directory to root by typin `~`  
-step 11: Then execute the rest of the script  
+**step 7**: Now SSH back to your RPI by using `ssh pi@local-ip` password `raspberry`  
+**step 8**: Once connected you need to `sudo passwd` and insert your root password (twice)  
+**step 9**: Then you need to change to ROOT by typing `su` and enter your root password  
+**step 10**: Now you will need to change directory to root by typin `~`  
+**step 11**: Then execute the rest of the script  
 ```
 wget https://raw.githubusercontent.com/tirtadji-com/Raspi-Docker-for-HA-Install/main/install.sh
 ```
 
-step 12: Now you will need to chmod and execute the scripts from your ROOT Directory
+**step 12**: Now you will need to chmod and execute the scripts from your ROOT Directory
 ```
 # Next you will need to chmod the files
 chmod +x install.sh
@@ -65,4 +65,4 @@ IF you did not setup NGINX on your first installation and would like to add it u
 # 2nd WARNING
 Before you run NGINX installation make sure you open your router port 80/443 and directed to your RPI-ip else you dont need to install NGINX
 
-In order to setup correctly you will need to run this command from your `/root/` directory as *ROOT*
+In order to setup correctly you will need to run this command from your `/root/` directory as **ROOT**

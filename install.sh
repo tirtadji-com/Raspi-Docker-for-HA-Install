@@ -32,7 +32,8 @@ chmod +x /root/hass/*.sh
 chmod +x /root/docker/*.sh
 rm /root/main.zip
 /root/main.sh
-rm /root/main.sh 
+rm /root/main.sh
+rm -rf /root/motd
 /root/home-assistant.sh
 rm /root/home-assistant.sh
 rm /root/install/docker-install.sh
