@@ -42,6 +42,8 @@ chmod +x install.sh
 # First WARNING
 Remember after the installation and Reboot you will need your SSH key to login since your RPI is now enhanced and your password will not working anymore
 
+After the installation complete you will connect to your RPI using `ssh root@local-ip` + your sshkey password
+
 # More Docker-Apps
 If you want to install more docker application for your Home-Assistant then you will have to run each individual script inside docker directory accept for hass-install.sh  
 To install simply by `cd /root/docker` and type `./[docker-apps]-install.sh`
@@ -59,6 +61,9 @@ To install simply by `cd /root/docker` and type `./[docker-apps]-install.sh`
 # Non Docker-Apps:
 - Glaces running on port 61208
 - Home-Assistant on port 8123
+
+# Portainer
+For those who never used Portainer please run this apps first, this will allow you to see your docker dashboard and allowing you to control your docker apps installed on your RPI. More information regarding portainer can be read at [portainer.io](https://www.portainer.io/)
 
 # NGINX Installation
 IF you did not setup NGINX on your first installation and would like to add it up you can run `./nginx.sh' from your root directory. 
