@@ -47,6 +47,7 @@ If you want to install more docker application for your Home-Assistant then you 
 To install simply by `cd /root/docker` and type `./[docker-apps]-install.sh`
 
 # Docker-Apps:
+- portainer running on port 9000
 - Grafana running on port 3000
 - ESP Home running on port 6052
 - InfluxDB running on port 8086
