@@ -14,6 +14,12 @@ ufw default allow outgoing
 ufw allow ssh
 ufw allow http 
 ufw allow https
+ufw allow 3000
+ufw allow 6052
+ufw allow 8086
+ufw allow 8765
+ufw allow 1883
+ufw allow 9003
 ufw --force enable
 
 service ufw start
