@@ -14,6 +14,7 @@ ufw default allow outgoing
 ufw allow ssh
 ufw allow http 
 ufw allow https
+ufw allow 8123
 ufw allow 3000
 ufw allow 6052
 ufw allow 8086
